@@ -1,0 +1,5 @@
+-- Which artists released the most songs each year in 1990 or later?
+SELECT artist_name, total_number_of_songs, year
+FROM luvn.laulut.top_artists_by_year
+WHERE year >= 1990
+ORDER BY total_number_of_songs DESC, year DESC
